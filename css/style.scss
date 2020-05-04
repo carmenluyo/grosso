@@ -475,3 +475,20 @@ header {
     background-image: url("../images/Equipo.jpg");
     
 }
+
+.section.equipo {
+    .h1-title {
+        position: relative;
+
+        span:after {
+           
+            position: absolute;
+            right: 0%;
+        }
+    }
+    
+    .title-home {
+            padding-top: 30px;
+
+    }
+}

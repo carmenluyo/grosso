@@ -400,6 +400,17 @@ header .active-menu {
   background-image: url("../images/Equipo.jpg");
 }
 
+.section.equipo .h1-title {
+  position: relative;
+}
+.section.equipo .h1-title span:after {
+  position: absolute;
+  right: 0%;
+}
+.section.equipo .title-home {
+  padding-top: 30px;
+}
+
 .title {
   font-family: "OpenSansLight";
   color: #fff;
