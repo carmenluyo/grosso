@@ -1,0 +1,208 @@
+/***************************************************
+AUTOR: carmen Luyo
+PROYECTO: tRESDE
+DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
+****************************************************/
+@import 'style.scss';
+@import 'animate.css';
+
+
+.title {
+    font-family: 'OpenSansLight';
+    color: #fff;
+}
+
+.h1-title {
+    font-size: 60px;
+    color: #fff;
+    font-weight: bolder;
+    font-family: "OpenSans";
+    margin-bottom: 15px;
+    line-height: 55px;
+
+    span:after {
+        content: "";
+        width: 204px;
+        height: 6px;
+        background-color: white;
+        display: block;
+        margin-top: 15px;
+    }
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  max-width: none;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+
+header {
+  nav {
+    display: none;
+  }
+  .btn-menu {
+    display: block;
+  }
+  .menu-responsive {
+    display: block;
+    ul > li {
+      display: block !important;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      a {
+        color: #3f3f3f !important;
+        &:hover {
+          color: $colorweb !important;
+        }
+      }
+    }
+  }
+  
+}
+
+/********** TEXT WEB CONTENT ***********/
+
+.info {
+      
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 38%;
+    max-width: 753px;
+    text-align: left;
+    z-index: 999;
+    padding: 0% 8%;
+    
+    .title-home {
+        font-size: 22px;
+        color: #fff;
+        font-family: 'OpenSansLight';
+
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+}
+
+/*********** EMPIEZA HOME ****************/
+
+.home {
+    background-image: url("../images/intro.jpg");
+
+    .shadow{
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+
+
+    .info {
+      
+        max-width: 100%;
+        text-align: center;
+        top: 75%;
+
+        .title-home {
+            text-transform: uppercase;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+/*********** Branding ****************/
+
+.servicios {
+    background-image: url("../images/Servicios.jpg");
+    
+}
+
+/*********** SocialMedia ****************/
+
+.equipo {
+    background-image: url("../images/Equipo.jpg");
+
+    .info {
+        text-align: right;
+        right: 0;
+    }
+}
+
+/*********** DiseñoWeb ****************/
+
+.DisenoWeb {
+    background-image: url("../images/Diseno_Web.jpg");
+}
+
+
+
+
+.contact {
+
+  background-color: black;
+  font-family: 'OpenSansLight';
+  .shadow{
+    background-color: rgba(0, 0, 0, 0.84);
+    height: 100%;
+    width: 100%;
+    p {
+        display: flex;
+        margin-top: 25px;
+        font-size: 20px;
+        max-width: 350px;
+        color: #fff;
+        letter-spacing: 1;
+        text-align: center;
+        line-height: 20px;
+        font-family: 'OpenSansLight';
+        
+      a {
+        display: block;
+        color: inherit;
+        @include transition(all 0.65s ease);
+        &:hover {
+          color:$colorweb;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/*** MEDIA QUERIES ***/
+
+
+@media screen and (max-width:769px) {
+  section.bg-section {
+    height: 100% !important;
+  }
+  .fp-section{
+    height: auto !important;
+    .fp-tableCell {
+      height: auto !important;
+    }
+  }  
+
+    .home .info, .info {
+        top: 30%;
+    }
+}

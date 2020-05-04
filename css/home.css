@@ -1,0 +1,568 @@
+@charset "UTF-8";
+/***************************************************
+AUTOR: carmen Luyo
+PROYECTO: tRESDE
+DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
+****************************************************/
+@import 'animate.css';
+* {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: transparent;
+}
+
+.hrfs {
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: 99999;
+}
+
+/* Fonts */
+/* Regular */
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
+}
+/* Light */
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../fonts/OpenSans-Light-webfont.eot");
+  src: url("../fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light-webfont.woff") format("woff"), url("../fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");
+}
+@font-face {
+  font-family: "SF-KingstonRegular";
+  src: url("../fonts/SF-Kingston-Regular.otf");
+}
+/** clear **/
+.cleardiv:after, .cleardiv:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/** texto centrado verticalmente **/
+.flex-center {
+  flex-direction: column;
+  -moz-flex-direction: column;
+  display: flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+}
+
+/** **/
+.icon-style {
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+a,
+input[type=submit],
+button,
+.transit {
+  transition: all 0.5s ease-out;
+}
+
+.reset {
+  padding-left: 0;
+  margin: 0;
+}
+
+.widthWeb {
+  width: 95%;
+  margin: auto;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bg-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 100%;
+}
+
+.bg-image {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.r-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  cursor: pointer;
+  transition: all 0.65s ease;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.active-overlay {
+  visibility: visible;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.fontRar {
+  color: #008891;
+  font-family: "SF-KingstonRegular";
+  font-size: 40px;
+}
+
+/*** HEADER ***/
+header {
+  transition: all 0.35s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1500;
+}
+header:after, header:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+header a {
+  color: black;
+}
+header .ctn-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 7% 0 5%;
+}
+header .ctn-menu .left > figure {
+  width: 70%;
+  padding: 0px;
+  margin: 0px;
+}
+header .ctn-menu .right nav ul {
+  margin-bottom: 0px;
+}
+header .ctn-menu .right nav ul li {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+header .ctn-menu .right nav ul li a {
+  display: block;
+  position: relative;
+  color: #fff;
+  font-family: "OpenSans";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 8px 15px;
+  transition: all 0.5s ease-out;
+}
+header .ctn-menu .right nav ul li a:hover {
+  color: #008891;
+}
+header .ctn-menu .right .mobile-icon {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 12;
+  width: 33px;
+}
+header .ctn-menu .right .mobile-icon i {
+  height: 3px;
+  width: 100%;
+  background: white;
+  display: block;
+  margin-bottom: 3px;
+}
+header .ctn-menu .right .mobile-icon i:last-child {
+  margin-bottom: 0px;
+}
+header .menu-responsive {
+  width: 270px;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: -270px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.32);
+  z-index: 1002;
+  transition: right 0.45s ease;
+}
+header .menu-responsive ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 35px;
+}
+header .menu-responsive .nav-logo {
+  text-align: center;
+  padding-top: 25%;
+}
+header .menu-responsive .nav-logo img {
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: block;
+  padding-left: 20px;
+}
+header .menu-responsive .close-nav {
+  position: absolute;
+  right: 50px;
+  float: right;
+  top: 45px;
+  cursor: pointer;
+}
+header .menu-responsive .close-nav i {
+  width: 30px;
+  z-index: 999;
+  height: 3px;
+  position: absolute;
+  background-color: #008891;
+}
+header .menu-responsive .close-nav i:nth-child(1) {
+  transform: rotate(45deg);
+}
+header .menu-responsive .close-nav i:nth-child(2) {
+  transform: rotate(-45deg);
+}
+header .active-menu {
+  right: 0;
+}
+
+/* MOBILE HEADER*/
+.btn-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  header .right .btn-menu span > i {
+    background-color: #fff;
+  }
+
+  .btn-menu {
+    display: inline-block;
+    top: 12px;
+    position: relative;
+  }
+
+  header .right > nav {
+    display: none;
+  }
+  header .right > .menu-responsive {
+    display: block;
+  }
+  header .right > .menu-responsive ul > li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid gray;
+  }
+  header .right > .menu-responsive ul > li a {
+    color: #3f3f3f;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header nav {
+    position: absolute;
+    float: right;
+    margin-right: -9px;
+    top: 39px;
+    display: block;
+    right: 47px;
+  }
+  header nav ul.menu-gral > li {
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s ease-out;
+  }
+}
+/* Estilos sub html */
+.hero-secundario {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+.hero-secundario h2 {
+  color: #ffff;
+  font-size: 7rem;
+}
+.hero-secundario h2:after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 35%;
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* NUESTROS SERVICIOS */
+.inicio-servicios {
+  background-image: url("../images/Servicios.jpg");
+}
+
+.info-servicios {
+  background-color: #f2f2f2;
+  padding: 5% 8%;
+  font-size: 19px;
+  font-family: "OpenSans";
+}
+.info-servicios span {
+  font-weight: bold;
+  font-style: italic;
+}
+.info-servicios .ctn-descripcion {
+  padding-top: 5%;
+}
+.info-servicios .ctn-descripcion .description-rigth {
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 3px 3px 11px 2px #bbb;
+  padding: 3%;
+}
+.info-servicios .ctn-descripcion .description-rigth span {
+  font-style: inherit;
+}
+.info-servicios .ctn-descripcion h4 {
+  color: #4d1a6f;
+  font-weight: bold;
+  font-size: 35px;
+}
+.info-servicios .ctn-descripcion .ctn-description-equipo h2 {
+  font-size: 20px;
+}
+.info-servicios .ctn-descripcion .ctn-description-equipo h3 {
+  font-size: 25px;
+  line-height: 10px;
+  padding-bottom: 15px;
+}
+.info-servicios .ctn-descripcion .ctn-description-equipo span {
+  font-style: initial;
+  font-weight: normal;
+}
+.info-servicios .ctn-descripcion .ctn-description-equipo figure {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+.info-servicios .ctn-descripcion .ctn-description-equipo figure img {
+  border-radius: 50%;
+  border: 5px solid #989898;
+}
+.info-servicios .ctn-descripcion .ctn-description-equipo .ctn-decription-profile p > span {
+  font-weight: bold;
+}
+
+.inicio-equipo {
+  background-image: url("../images/Equipo.jpg");
+}
+
+.title {
+  font-family: "OpenSansLight";
+  color: #fff;
+}
+
+.h1-title {
+  font-size: 60px;
+  color: #fff;
+  font-weight: bolder;
+  font-family: "OpenSans";
+  margin-bottom: 15px;
+  line-height: 55px;
+}
+.h1-title span:after {
+  content: "";
+  width: 204px;
+  height: 6px;
+  background-color: white;
+  display: block;
+  margin-top: 15px;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  max-width: none;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+header nav {
+  display: none;
+}
+header .btn-menu {
+  display: block;
+}
+header .menu-responsive {
+  display: block;
+}
+header .menu-responsive ul > li {
+  display: block !important;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+header .menu-responsive ul > li a {
+  color: #3f3f3f !important;
+}
+header .menu-responsive ul > li a:hover {
+  color: #008891 !important;
+}
+
+/********** TEXT WEB CONTENT ***********/
+.info {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 38%;
+  max-width: 753px;
+  text-align: left;
+  z-index: 999;
+  padding: 0% 8%;
+}
+.info .title-home {
+  font-size: 22px;
+  color: #fff;
+  font-family: "OpenSansLight";
+}
+.info .title-home span {
+  font-weight: bold;
+}
+
+/*********** EMPIEZA HOME ****************/
+.home {
+  background-image: url("../images/intro.jpg");
+}
+.home .shadow {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.home .info {
+  max-width: 100%;
+  text-align: center;
+  top: 75%;
+}
+.home .info .title-home {
+  text-transform: uppercase;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/*********** Branding ****************/
+.servicios {
+  background-image: url("../images/Servicios.jpg");
+}
+
+/*********** SocialMedia ****************/
+.equipo {
+  background-image: url("../images/Equipo.jpg");
+}
+.equipo .info {
+  text-align: right;
+  right: 0;
+}
+
+/*********** DiseñoWeb ****************/
+.DisenoWeb {
+  background-image: url("../images/Diseno_Web.jpg");
+}
+
+.contact {
+  background-color: black;
+  font-family: "OpenSansLight";
+}
+.contact .shadow {
+  background-color: rgba(0, 0, 0, 0.84);
+  height: 100%;
+  width: 100%;
+}
+.contact .shadow p {
+  display: flex;
+  margin-top: 25px;
+  font-size: 20px;
+  max-width: 350px;
+  color: #fff;
+  letter-spacing: 1;
+  text-align: center;
+  line-height: 20px;
+  font-family: "OpenSansLight";
+}
+.contact .shadow p a {
+  display: block;
+  color: inherit;
+  transition: all 0.65s ease;
+}
+.contact .shadow p a:hover {
+  color: #008891;
+}
+
+/*** MEDIA QUERIES ***/
+@media screen and (max-width: 769px) {
+  section.bg-section {
+    height: 100% !important;
+  }
+
+  .fp-section {
+    height: auto !important;
+  }
+  .fp-section .fp-tableCell {
+    height: auto !important;
+  }
+
+  .home .info, .info {
+    top: 30%;
+  }
+}
