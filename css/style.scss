@@ -462,8 +462,19 @@ header {
 
 
             .ctn-decription-profile {
+                height: 300px;
+
                 p > span {
                     font-weight: bold;
+                }
+            }
+
+            .linkedin {
+                margin: 15px 0;
+
+                > span {
+                    font-weight: bold;
+                    color: #525252;
                 }
             }
 
@@ -486,9 +497,10 @@ header {
             right: 0%;
         }
     }
-    
+
     .title-home {
             padding-top: 30px;
 
     }
 }
+

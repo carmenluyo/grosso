@@ -392,8 +392,18 @@ header .active-menu {
   border-radius: 50%;
   border: 5px solid #989898;
 }
+.info-servicios .ctn-descripcion .ctn-description-equipo .ctn-decription-profile {
+  height: 300px;
+}
 .info-servicios .ctn-descripcion .ctn-description-equipo .ctn-decription-profile p > span {
   font-weight: bold;
+}
+.info-servicios .ctn-descripcion .ctn-description-equipo .linkedin {
+  margin: 15px 0;
+}
+.info-servicios .ctn-descripcion .ctn-description-equipo .linkedin > span {
+  font-weight: bold;
+  color: #525252;
 }
 
 .inicio-equipo {
