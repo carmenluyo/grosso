@@ -133,6 +133,7 @@ header a {
 header .ctn-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2% 7% 0 5%;
 }
 header .ctn-menu .left > figure {
@@ -235,7 +236,7 @@ header .active-menu {
 .login span {
   color: #ffff;
   background-color: #eaeaea45;
-  font-size: 20px;
+  font-size: 15px;
   padding: 5px 25px;
   font-family: "OpenSans";
 }
@@ -387,12 +388,16 @@ header .active-menu {
 .fp-viewing-footer header {
   display: none;
 }
+.fp-viewing-footer h4 {
+  margin-top: 0px !important;
+}
 
 .footer h4 {
   color: #4d1a6f;
   font-size: 50px;
   font-weight: bold;
   line-height: 45px;
+  margin-top: 5%;
 }
 .footer h4 span {
   color: gray;
@@ -417,11 +422,11 @@ header .active-menu {
 }
 .footer .info-footer h5 {
   color: #4d1a6f;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
 }
 .footer .info-footer span {
-  font-size: 21px;
+  font-size: 18px;
   color: #848383;
 }
 
@@ -522,7 +527,7 @@ header .menu-responsive ul > li a:hover {
 }
 .home .info .title-home {
   text-transform: uppercase;
-  max-width: 700px;
+  max-width: 850px;
   margin: 0 auto;
 }
 

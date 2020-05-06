@@ -159,6 +159,7 @@ header {
   .ctn-menu {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 2% 7% 0 5%;
 
         .left > figure{
@@ -276,7 +277,7 @@ header {
 .login span {
     color: #ffff;
     background-color: #eaeaea45;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px 25px;
     font-family: "OpenSans";
 }
@@ -471,8 +472,14 @@ header {
     }
 }
 
-.fp-viewing-footer header {
-    display: none;
+.fp-viewing-footer {
+    header {
+        display: none;
+    }
+
+    h4 {
+        margin-top: 0px !important;
+    }
 }
 
 .footer {
@@ -482,6 +489,7 @@ header {
         font-size: 50px;
         font-weight: bold;
         line-height: 45px;
+        margin-top: 5%;
 
         span {
             color: gray;
@@ -510,12 +518,12 @@ header {
 
         h5 {
             color: #4d1a6f;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 600;
         }
 
         span {
-            font-size: 21px;
+            font-size: 18px;
             color: #848383;
         }
     }
