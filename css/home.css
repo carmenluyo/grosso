@@ -523,7 +523,7 @@ header .menu-responsive ul > li a:hover {
 .home .info {
   max-width: 100%;
   text-align: center;
-  top: 65%;
+  top: 50%;
 }
 .home .info .title-home {
   text-transform: uppercase;
