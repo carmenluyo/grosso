@@ -11,9 +11,11 @@ html,body{
   height: 100%;
   min-height: 100%;
 }
+
 body{
   position: relative;
   background-color: transparent;
+  font-family: "OpenSans";
 }
 
 .hrfs {
@@ -34,18 +36,7 @@ body{
 
 }
 
-/* Light */
 
-@font-face {
-  font-family: 'OpenSansLight';
-  src: url('../fonts/OpenSans-Light-webfont.eot');
-  src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
-
-}
-@font-face {
-  font-family: 'SF-KingstonRegular';
-  src: url('../fonts/SF-Kingston-Regular.otf');
-}
 
 /** clear **/
 
@@ -108,30 +99,6 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-a,
-input[type=submit],
-button,
-.transit {
-  transition: all 0.5s ease-out;
-}
-.reset {
-  padding-left: 0;
-  margin: 0;
-}
-.widthWeb {
-  width: 95%;
-  margin: auto;
-  position: relative;
-}
 img {
   max-width: 100%;
   height: auto;
@@ -173,11 +140,7 @@ $colorgray:#b6b4ae; // gray
   @include opacity(0.5); 
 }
 
-.fontRar {
-  color: $colorweb;
-   font-family: 'SF-KingstonRegular';
-   font-size: 40px;
-}
+
 
 /*** HEADER ***/
 header {
@@ -310,8 +273,12 @@ header {
 
 /* MOBILE HEADER*/
 
-.btn-menu {
-  display: none;
+.login span {
+    color: #ffff;
+    background-color: #eaeaea45;
+    font-size: 20px;
+    padding: 5px 25px;
+    font-family: "OpenSans";
 }
 
 @media screen and (max-width:1024px) {
@@ -376,7 +343,7 @@ header {
 
     h2 {
         color: #ffff;
-        font-size: 7rem;
+        font-size: 85px;
         &:after {
             content: "";
             display: block;
@@ -431,7 +398,7 @@ header {
         h4 {
             color: #4d1a6f;
             font-weight: bold;
-            font-size: 35px;
+            font-size: 30px;
         }
 
         .ctn-description-equipo {
@@ -504,3 +471,52 @@ header {
     }
 }
 
+.fp-viewing-footer header {
+    display: none;
+}
+
+.footer {
+
+    h4 {
+        color: #4d1a6f;
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 45px;
+
+        span {
+            color: gray;
+            font-weight: 400;
+            font-size: 45px;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 5px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                background-color: #eaeaea;
+            }
+        }
+    }
+
+    .info-footer {
+        display: flex;
+        align-items: center;
+
+        i {
+            width: 120px;
+        }
+
+        h5 {
+            color: #4d1a6f;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        span {
+            font-size: 21px;
+            color: #848383;
+        }
+    }
+}

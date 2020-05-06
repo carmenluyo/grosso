@@ -8,12 +8,12 @@ DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
 
 
 .title {
-    font-family: 'OpenSansLight';
     color: #fff;
+    font-family: "OpenSans";
 }
 
 .h1-title {
-    font-size: 60px;
+    font-size: 52px;
     color: #fff;
     font-weight: bolder;
     font-family: "OpenSans";
@@ -80,15 +80,15 @@ header {
     position: absolute;
     width: 100%;
     top: 38%;
-    max-width: 753px;
+    max-width: 850px;
     text-align: left;
     z-index: 999;
     padding: 0% 8%;
     
     .title-home {
-        font-size: 22px;
+        font-size: 24px;
         color: #fff;
-        font-family: 'OpenSansLight';
+        font-family: "OpenSans";
 
 
         span {
@@ -145,45 +145,6 @@ header {
     }
 }
 
-/*********** DiseñoWeb ****************/
-
-.DisenoWeb {
-    background-image: url("../images/Diseno_Web.jpg");
-}
-
-
-
-
-.contact {
-
-  background-color: black;
-  font-family: 'OpenSansLight';
-  .shadow{
-    background-color: rgba(0, 0, 0, 0.84);
-    height: 100%;
-    width: 100%;
-    p {
-        display: flex;
-        margin-top: 25px;
-        font-size: 20px;
-        max-width: 350px;
-        color: #fff;
-        letter-spacing: 1;
-        text-align: center;
-        line-height: 20px;
-        font-family: 'OpenSansLight';
-        
-      a {
-        display: block;
-        color: inherit;
-        @include transition(all 0.65s ease);
-        &:hover {
-          color:$colorweb;
-        }
-      }
-    }
-  }
-}
 
 
 
@@ -195,14 +156,11 @@ header {
   section.bg-section {
     height: 100% !important;
   }
+
   .fp-section{
     height: auto !important;
     .fp-tableCell {
       height: auto !important;
     }
   }  
-
-    .home .info, .info {
-        top: 30%;
-    }
 }
