@@ -23,6 +23,10 @@ body {
   font-family: "OpenSans";
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+
 .hrfs {
   display: block;
   height: 100%;
@@ -490,12 +494,18 @@ header .menu-responsive ul > li a:hover {
   color: #008891 !important;
 }
 
+.btn-mas {
+  color: #ffff;
+  background-color: #21212175;
+  padding: 5px 20px;
+}
+
 /********** TEXT WEB CONTENT ***********/
 .info {
   display: block;
   position: absolute;
   width: 100%;
-  top: 38%;
+  top: 30%;
   max-width: 850px;
   text-align: left;
   z-index: 999;

@@ -18,6 +18,10 @@ body{
   font-family: "OpenSans";
 }
 
+a:hover {
+    text-decoration: none !important;
+}
+
 .hrfs {
     display: block;
     height: 100%;
