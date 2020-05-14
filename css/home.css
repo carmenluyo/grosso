@@ -246,44 +246,88 @@ header .active-menu {
 }
 
 @media screen and (max-width: 1024px) {
-  header .right .btn-menu span > i {
-    background-color: #fff;
+  .fp-viewing-footer header {
+    display: block !important;
   }
 
-  .btn-menu {
-    display: inline-block;
-    top: 12px;
-    position: relative;
-  }
-
-  header .right > nav {
-    display: none;
-  }
-  header .right > .menu-responsive {
-    display: block;
-  }
-  header .right > .menu-responsive ul > li {
-    display: block;
-    text-align: center;
-    border-bottom: 1px solid gray;
-  }
-  header .right > .menu-responsive ul > li a {
-    color: #3f3f3f;
-  }
-}
-@media only screen and (min-width: 768px) {
-  header nav {
+  header .ctn-menu .left > figure {
     position: absolute;
-    float: right;
-    margin-right: -9px;
-    top: 39px;
-    display: block;
-    right: 47px;
+    top: 200px;
+    width: 90%;
+    margin: 0;
+    padding: 0;
   }
-  header nav ul.menu-gral > li {
-    display: inline-block;
-    position: relative;
-    transition: all 0.5s ease-out;
+  header .ctn-menu .right .login {
+    margin-top: 20px;
+  }
+
+  .servicios .info, .equipo .info {
+    top: 10%;
+  }
+
+  .footer .ctn-footer h4 {
+    font-size: 27px;
+    text-align: center;
+  }
+  .footer .ctn-footer h4 span {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 19px;
+  }
+  .footer .container .d-flex {
+    display: block !important;
+  }
+  .footer .container .d-flex .ctn-description-footer li {
+    margin-bottom: 22px;
+  }
+  .footer .container .d-flex .ctn-description-footer h5 {
+    font-size: 25px;
+  }
+  .footer .container .d-flex .ctn-description-footer span {
+    font-size: 18px;
+  }
+  .footer .container .d-flex .ctn-description-footer li:nth-child(1) i {
+    width: 100px;
+  }
+  .footer .container .d-flex .ctn-description-footer li:nth-child(2) i {
+    width: 142px;
+  }
+  .footer .container .d-flex .ctn-description-footer li:nth-child(3) i {
+    width: 115px;
+  }
+
+  .hero-secundario h2 {
+    font-size: 60px !important;
+    text-align: center;
+    line-height: 58px;
+    margin-top: 35px;
+  }
+  .hero-secundario h2:after {
+    top: 15px;
+    height: 3px !important;
+    width: 25% !important;
+  }
+
+  .info-servicios {
+    padding: 20% 8% !important;
+  }
+  .info-servicios .ctn-descripcion {
+    padding-top: 0px !important;
+  }
+  .info-servicios .ctn-descripcion .description-rigth {
+    margin-bottom: 40px;
+  }
+  .info-servicios .ctn-descripcion .d-flex {
+    display: block !important;
+  }
+  .info-servicios .ctn-descripcion .d-flex h4 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 23px !important;
+  }
+
+  .ctn-description-equipo {
+    margin-top: 70px;
   }
 }
 /* Estilos sub html */

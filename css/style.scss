@@ -22,6 +22,7 @@ a:hover {
     text-decoration: none !important;
 }
 
+
 .hrfs {
     display: block;
     height: 100%;
@@ -287,55 +288,123 @@ header {
 }
 
 @media screen and (max-width:1024px) {
-  header {
-    .right {
-      .btn-menu {
-        span > i {
-          background-color: #fff;
+
+    .fp-viewing-footer header {
+        display: block !important;
+    }
+    header .ctn-menu {
+
+        .left > figure {
+            position: absolute;
+            top: 200px;
+            width: 90%;
+            margin: 0;
+            padding: 0;
         }
-      }
+
+        .right .login{
+            margin-top: 20px;
+        }
+    } 
+
+    .servicios, .equipo {
+        .info {
+            top: 10%;
+        }
     }
-  }
-  .btn-menu {
-    display: inline-block;
-    top: 12px;
-    position: relative;
-  }
-  header .right {
-    > nav {
-      display: none;
+
+    .footer {
+
+        .ctn-footer h4 {
+            font-size: 27px;
+            text-align: center;
+
+            span {
+                font-size: 20px;
+                font-weight: 100;
+                line-height: 19px;
+            }
+        }
+
+        .container .d-flex {
+            display: block !important;
+
+            .ctn-description-footer {
+
+                li {
+                    margin-bottom: 22px;
+                }
+                h5 {
+                    font-size: 25px;
+
+                }
+
+                span {
+                    font-size: 18px;
+                }
+
+                li:nth-child(1) {
+                    i {
+                        width: 100px;
+                    }
+                }
+
+                li:nth-child(2) {
+                    i {
+                        width: 142px;
+                    }
+                }
+
+                li:nth-child(3) {
+                    i {
+                        width: 115px;
+                    }
+                }
+            }
+        }
     }
-    > .menu-responsive {
-      display: block;
-      ul > li {
-        display: block;
+
+    .hero-secundario h2{
+        font-size: 60px !important;
         text-align: center;
-        border-bottom: 1px solid gray;
-        a {
-          color: #3f3f3f;
+        line-height: 58px;
+        margin-top: 35px;
+
+
+        &:after {
+            top: 15px;
+            height: 3px !important;
+            width: 25% !important;
         }
-      }
     }
-  }
+
+    .info-servicios {
+        padding: 20% 8% !important;
+
+        .ctn-descripcion {
+            padding-top: 0px !important;
+
+            .description-rigth {
+                margin-bottom: 40px;
+            }
+
+            .d-flex {
+                display: block !important;
+
+                h4 {
+                    margin-bottom: 40px;
+                    text-align: center;
+                    font-size: 23px !important;
+                }
+            }
+        }
+    }
+
+    .ctn-description-equipo {
+        margin-top: 70px;
+    }
 }
 
-@media only screen and (min-width: 768px) {
-  header {
-    nav {
-      position: absolute;
-      float: right;
-      margin-right: -9px;
-      top: 39px;
-      display: block;
-      right: 47px;
-      ul.menu-gral > li {
-        display: inline-block;
-        position: relative;
-        transition: all 0.5s ease-out;
-      }
-    }
-  }
-}
 
 
 
