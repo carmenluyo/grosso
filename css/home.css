@@ -252,7 +252,7 @@ header .active-menu {
 
   header .ctn-menu .left > figure {
     position: absolute;
-    top: 200px;
+    top: 145px;
     width: 90%;
     margin: 0;
     padding: 0;
@@ -263,8 +263,17 @@ header .active-menu {
 
   .servicios .info, .equipo .info {
     top: 10%;
+    position: relative;
+    padding: 25px;
   }
 
+  .home .info .title-home {
+    font-size: 18px;
+  }
+
+  .footer {
+    padding: 25px;
+  }
   .footer .ctn-footer h4 {
     font-size: 27px;
     text-align: center;
@@ -602,7 +611,7 @@ header .menu-responsive ul > li a:hover {
 /*** MEDIA QUERIES ***/
 @media screen and (max-width: 769px) {
   section.bg-section {
-    height: 100% !important;
+    min-height: 100% !important;
   }
 
   .fp-section {

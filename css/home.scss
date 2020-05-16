@@ -159,7 +159,7 @@ header {
 
 @media screen and (max-width:769px) {
   section.bg-section {
-    height: 100% !important;
+    min-height: 100% !important;
   }
 
   .fp-section{
