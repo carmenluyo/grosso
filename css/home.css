@@ -513,6 +513,7 @@ header .active-menu {
   font-size: 3em;
   color: white;
   display: block;
+  margin-top: 40%;
 }
 
 .img-cover {
