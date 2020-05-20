@@ -509,6 +509,12 @@ header .active-menu {
   margin-top: 15px;
 }
 
+.info i.fa.fa-angle-down {
+  font-size: 3em;
+  color: white;
+  display: block;
+}
+
 .img-cover {
   width: 100%;
   height: 100%;
