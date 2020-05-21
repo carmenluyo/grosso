@@ -509,11 +509,19 @@ header .active-menu {
   margin-top: 15px;
 }
 
-.info i.fa.fa-angle-down {
+.arrow-white i.fa.fa-angle-down {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+}
+
+.home i.fa.fa-angle-down, i.fa.fa-angle-down {
   font-size: 3em;
   color: white;
   display: block;
-  margin-top: 40%;
+  margin-top: 10% !important;
+  text-align: center;
 }
 
 .img-cover {
