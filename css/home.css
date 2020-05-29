@@ -636,3 +636,6 @@ header .menu-responsive ul > li a:hover {
     height: auto !important;
   }
 }
+.btn-arrow-home i.fa.fa-angle-down {
+  margin-top: -5% !important;
+}
