@@ -289,20 +289,16 @@ header .active-menu {
   .footer .container .d-flex .ctn-description-footer li {
     margin-bottom: 22px;
   }
-  .footer .container .d-flex .ctn-description-footer h5 {
-    font-size: 25px;
+  .footer .container .d-flex .ctn-description-footer li i {
+    width: 70px;
+    flex-shrink: 0;
+    text-align: right;
   }
   .footer .container .d-flex .ctn-description-footer span {
-    font-size: 18px;
+    font-size: 15px;
   }
-  .footer .container .d-flex .ctn-description-footer li:nth-child(1) i {
-    width: 100px;
-  }
-  .footer .container .d-flex .ctn-description-footer li:nth-child(2) i {
-    width: 142px;
-  }
-  .footer .container .d-flex .ctn-description-footer li:nth-child(3) i {
-    width: 115px;
+  .footer .container .d-flex .ctn-description-footer h5 {
+    font-size: 25px;
   }
 
   .hero-secundario h2 {
